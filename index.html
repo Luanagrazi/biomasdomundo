@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OS BIOMAS DO MUNDO</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        #scroll-container {
+            text-align: center; /* Centraliza as imagens horizontalmente */
+    }
+
+        #scroll-container img {
+            width: 300px; /* Largura das imagens, ajuste conforme necessário */
+            height: auto;
+            display: inline-block;
+            margin: 0 10px; /* Espaçamento entre as imagens, ajuste conforme necessário */
+            border: 2px solid black; /* Adiciona uma borda fina preta */
+            border-radius: 10px; /* Raio do canto arredondado, ajuste conforme necessário */
+            overflow: hidden; /* Para garantir que a imagem não ultrapasse o canto arredondado */
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+
+        .container-slider {
+            display: flex;
+            width: 100%;
+            min-height: 40vh;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+    }
+
+        .container-images {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+    }
+
+        .slider {
+            opacity: 0;
+            transition: opacity .2s;
+            position: absolute;
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid black;
+    }
+
+        .on {
+            opacity: 1;
+    }
+
+        #prev-button, #next-button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+    }
+
+        #prev-button img, #next-button img {
+            width: 100%;
+            height: 100%;
+    }
+
+        #prev-button {
+            transform: rotate(180deg);
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">Biomas Mundiais</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://static.todamateria.com.br/upload/di/st/distribuicaodosbiomas.jpg" alt="..." /></div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Biomas</h1>
+                <p>Os biomas do mundo são ecossistemas distintos que abrangem vastas áreas geográficas e são caracterizados por diferentes condições climáticas, temperatura, fauna e flora. Essas regiões são únicas em sua diversidade e desempenham um papel fundamental na manutenção da biodiversidade global. Entre os diversos biomas existentes, destacam-se as Tundras, as Taigas, as Floresta Temperadas, as Floresta Tropicais, as Savanas, as Pradarias e os Desertos.</p>
+                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=nOSwLCk7NEo&t=914s">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body"><p class="text-white m-0">A seguir, veremos os principais biomas do mundo, e é importante destacar que cada bioma possui particularidades em termos de clima, vegetação e fauna. Tornando-os únicos e de grande importância para a manutenção do equilíbrio ecológico global.</p></div>
+        </div>
+        <h3 id="tundra">TUNDRA</h3>
+            <p>Situa-se nas regiões árticas, como o norte do Alasca, norte do Canadá, Groenlândia e norte da Rússia. Apresenta temperaturas extremamente frias e ventos fortes. A tundra também possui um solo permanentemente congelado, conhecido como permafrost. Os animais da tundra incluem renas, lemingues, ursos polares, raposas-do-ártico;. Esses animais são protegidas por uma densa pelagem. Devido às condições extremas, a tundra apresenta vegetação de baixo crescimento, como musgos, liquens e pequenos arbustos.</p>
+            <div id="scroll-container">
+                <img src="img/tundra.jpg" alt="Imagem 1">
+            </div>
+        <br/>
+        <h3 id="taiga">TAIGA</h3>
+            <p>Também conhecida como floresta de coníferas, como pinheiros, abetos e cedros. É o maior bioma terrestre e é encontrado em regiões frias, como no norte da América do Norte, Europa e Ásia. Caracterizado por invernos longos e frios, com temperaturas extremamente baixas, e verões curtos e frescos. A taiga abriga uma grande variedade de animais adaptados ao clima frio, como alces, ursos, lobos, linces, lebres, martas e diversas espécies de aves migratórias.</p>
+            <div id="scroll-container">
+                <img src="img/taiga.jpg" alt="Imagem 1">
+            </div>
+        <br/>
+        <h3 id="temperada">FLORESTA TEMPERADA</h3>
+            <p>Localizada em áreas com estações distintas, com verões quentes e invernos frios. Precipitação moderada ao longo do ano. Essas florestas são compostas principalmente por árvores de folhas largas que perdem suas folhas durante o outono, como carvalhos, bordos e faia. Também podem ocorrer coníferas, como pinheiros. Em relação a Fauna, inclui uma variedade de mamíferos, como veados, ursos, lobos, raposas, além de diversas aves, como corujas, falcões e pica-paus.</p>
+            <div id="scroll-container">
+                <img src="img/ft.jpg" alt="Imagem 1">
+            </div>
+        <br/>
+        <br/>
+        <h3 id="tropical">FLORESTA TROPICAL</h3>
+            <p>Encontrada nas regiões equatoriais, com alta umidade e temperaturas elevadas ao longo do ano. É caracterizada por uma densa cobertura de árvores de diferentes alturas e camadas, vegetação exuberante e uma grande diversidade de espécies. Podemos encontrar animais como macacos, tucanos, araras, preguiças, onças, anacondas, entre muitos outros.</p>
+            <div id="scroll-container">
+                <img src="img/ftr.jpg" alt="Imagem 1">
+            </div>
+        <br/>
+        <h3 id="savana">SAVANAS</h3>
+            <p>Caracterizado por uma estação seca prolongada e uma estação chuvosa. As savanas são encontradas principalmente na África, como a Savana Africana, mas também podem ocorrer em outras regiões tropicais e subtropicais. Caracterizam-se por uma vegetação composta por gramíneas altas e espaçadas, pontilhadas por árvores dispersas, como acácias e baobás. Também podem ocorrer arbustos e palmeiras. A savana abriga uma rica diversidade de animais, incluindo herbívoros como zebras, elefantes, girafas, búfalos e antílopes. Também são encontrados predadores como leões, leopardos, chitas e hienas. Além disso, a savana é conhecida por suas aves, como avestruzes, águias e abutres.</p>
+            <div id="scroll-container">
+                <img src="img/savana.jpg" alt="Imagem 1">
+            </div>
+        <br/>
+        <h3 id="padraria">PADRARIA</h3>
+            <p>As pradarias podem ser encontradas em diferentes regiões do mundo, como as Grandes Planícies da América do Norte, Pampas da América do Sul e Estepes da Eurásia. Caracterizado por estações distintas, com verões quentes e invernos frios. São extensas áreas de vegetação composta principalmente por gramíneas, com poucas árvores e arbustos. As pradarias abrigam uma rica diversidade de animais adaptados a esse ambiente. Entre eles, temos bisões, antílopes, cervos, coiotes, lobos, raposas e uma variedade de roedores. Além disso, as pradarias também são conhecidas por suas aves, como o grou-das-pradarias e o falcão-peregrino.</p>
+            <div id="scroll-container">
+                <img src="img/padraria2.jpg" alt="Imagem 1">
+            </div>
+        <br/>
+        <h3 id="deserto">DESERTO</h3>
+            <p>Presente em diferentes continentes, como o Deserto do Saara na África, Deserto de Atacama na América do Sul e Deserto de Mojave na América do Norte. São áreas com baixa precipitação pluviométrica, condições áridas e variações extremas de temperatura entre o dia e a noite. Apresenta plantas adaptadas à escassez de água, como cactos, arbustos resistentes e gramíneas adaptadas à aridez. E, inclui animais adaptados às condições extremas do deserto, como camelos, lagartos, cobras venenosas, escorpiões e aves migratórias.</p>
+            <div id="scroll-container">
+                <img src="img/deserto2.jpg" alt="Imagem 1">
+            </div>
+        <hr>
+        <br/>  
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card One</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card Two</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                    </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card Three</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body">
+            <h1>Biomas Brasileiros</h1>
+        </div>
+    </div>
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <center>
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="img/mapa.png" alt="..."></div>
+        </center>
+    <br/>
+        <h3>De acordo com a classificação do Instituto Brasileiro de Geografia e Estatística (IBGE), existem seis biomas no Brasil. Eles são:</h3>
+    <br/>
+        <div class="destaque">
+            <p>⠀Ao escolher e clicar na imagem abaixo, você será redirecionado instantaneamente para o conteúdo específico do bioma de sua escolha. Bons estudos!</p>
+        </div>
+        <div class="container-slider">
+            <button id="prev-button"><img src="img/arrow.png" alt="prev-button"></button>
+            <div class="container-images">
+                <img src="img/6.png" alt="" class="slider on">
+                <img src="img/5.png" alt="" class="slider">
+                <img src="img/2.png" alt="" class="slider on">
+                <img src="img/4.png" alt="" class="slider">
+                <img src="img/3.png" alt="" class="slider on">
+                <img src="img/1.png" alt="" class="slider">
+            </div>
+            <button id="next-button"><img src="img/arrow.png" alt="next-button"></button>
+        </div>
+    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Instituto Federal do Rio Grande do Norte</p></div>
+    </footer>
+    <script>
+        const slider = document.querySelectorAll('.slider');
+        const btnPrev = document.getElementById('prev-button');
+        const btnNext = document.getElementById('next-button');
+
+        let currentSlide = 0;
+
+        function hideSlider() {
+            slider.forEach(item => item.classList.remove('on'))
+        }
+
+        function showSlider() {
+            slider[currentSlide].classList.add('on')
+        }
+
+        function nextSlider() {
+        hideSlider()
+        if(currentSlide === slider.length -1) {
+            currentSlide = 0
+        } else {
+            currentSlide++
+        }
+        showSlider()
+        }
+
+        function prevSlider() {
+        hideSlider()
+        if(currentSlide === 0) {
+            currentSlide = slider.length -1
+        } else {
+            currentSlide--
+        }
+        showSlider()
+        }
+
+        btnNext.addEventListener('click', nextSlider)
+        btnPrev.addEventListener('click', prevSlider)
+    </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/script.js"></script>
+</body>
+</html>
